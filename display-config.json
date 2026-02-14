@@ -1,0 +1,8 @@
+{
+  "storeId": "store-001",
+  "displayId": "", 
+  "pollIntervalMs": 5000,
+  "controlBaseUrl": "",
+  "pullPathTemplate": "/api/displays/{displayId}/payload",
+  "registerPath": "/api/displays/register"
+}

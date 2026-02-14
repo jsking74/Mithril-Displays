@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Mithril Display Receiver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app" aria-live="polite">
+      <canvas id="scene-canvas" width="1920" height="1080"></canvas>
+
+      <section id="overlay" class="panel">
+        <h1 id="scene-title">Waiting for controller…</h1>
+        <p id="scene-subtitle">Booting Mithril Matrix display receiver</p>
+      </section>
+
+      <aside id="hud" class="panel">
+        <h2>Receiver Status</h2>
+        <ul>
+          <li><strong>Display ID:</strong> <span id="hud-display-id">-</span></li>
+          <li><strong>Connection:</strong> <span id="hud-connection">offline</span></li>
+          <li><strong>Scene:</strong> <span id="hud-scene">-</span></li>
+          <li><strong>Elapsed:</strong> <span id="hud-elapsed">0.0s</span></li>
+          <li><strong>FPS:</strong> <span id="hud-fps">0</span></li>
+          <li><strong>Frame Budget:</strong> <span id="hud-frame-budget">16.67ms</span></li>
+          <li><strong>Payload Version:</strong> <span id="hud-version">-</span></li>
+          <li><strong>Control URL:</strong> <span id="hud-host">-</span></li>
+        </ul>
+        <p class="help">Controls: ←/→ previous/next scene · Space pause/resume · H hide HUD</p>
+      </aside>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
