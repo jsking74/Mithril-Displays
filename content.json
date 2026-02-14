@@ -1,0 +1,24 @@
+{
+  "version": "fallback-1.1.0",
+  "rotationSeconds": 12,
+  "scenes": [
+    {
+      "id": "aurora",
+      "title": "Fallback: Awaiting Matrix Push",
+      "subtitle": "Display will update when Mithril Matrix payload is reachable",
+      "theme": ["#67a4ff", "#8fffd8", "#d8b5ff"]
+    },
+    {
+      "id": "ribbons",
+      "title": "Fallback: Network Degraded",
+      "subtitle": "Running local emergency loop",
+      "theme": ["#ff6aa9", "#ffd36d", "#9ab9ff"]
+    },
+    {
+      "id": "particles",
+      "title": "Fallback: Local Playback",
+      "subtitle": "Receiver remains active until remote payload resumes",
+      "theme": ["#6ef1ff", "#7e8dff", "#60ffaa"]
+    }
+  ]
+}
